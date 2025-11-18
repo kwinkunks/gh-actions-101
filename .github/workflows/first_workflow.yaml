@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout
-      - uses: actions/setup-python
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.14"
       - run: python mycode.py
@@ -25,4 +25,3 @@ jobs:
   # Mark off where in the story we are
   # Make a few mistakes
   # Add manual dispatch earlier?
-  
