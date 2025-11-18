@@ -7,4 +7,4 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      echo "Hello!""
+      run: echo "Hello world!""
