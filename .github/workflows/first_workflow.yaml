@@ -7,5 +7,16 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Hello world!"
+      - run: echo "Hello world!"
+
+  run-some-code:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout
+      - uses: actions/setup-python
+        with:
+          python-version: "3.14"
+      - run: python mycode.py
+
   
